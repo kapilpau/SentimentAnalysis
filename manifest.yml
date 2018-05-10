@@ -1,0 +1,7 @@
+---
+applications:
+- name: Devoxx-Sentiment-Analysis
+  memory: 256M
+  random-route: true
+  instances: 1
+  timeout: 80
