@@ -5,8 +5,8 @@ var path = require('path');
 var app = express();
 var Cloudant = require('@cloudant/cloudant');
 var cloudantDets = {
-  "username": "efe71597-a6f6-43af-ab51-02ce0c68471c-bluemix",
-  "password": "180e2db976ef70fddf96385170063da9225747c774e3785eb648815dcb0ce417",
+  "username": "",
+  "password": "",
   "host": "efe71597-a6f6-43af-ab51-02ce0c68471c-bluemix.cloudant.com",
   "port": 443,
   "url": "https://efe71597-a6f6-43af-ab51-02ce0c68471c-bluemix:180e2db976ef70fddf96385170063da9225747c774e3785eb648815dcb0ce417@efe71597-a6f6-43af-ab51-02ce0c68471c-bluemix.cloudant.com"
@@ -52,14 +52,14 @@ var cloudant = Cloudant(cloudantDets.url, function (er, cloudant, reply) {
 });
 
 var client = new Twitter({
-  consumer_key: '51HtzK32GVwg1hcg9cL2Mh9eH',
-  consumer_secret: 'D4Vx9LIKdy4poS9Q8DbOyIcK9z0zY561buFYEdAfBBZpNXTgYO',
-  access_token_key: '991376790538121218-3AV2fLH3IqYW0tmfqByRws4yyd98j8k',
-  access_token_secret: 'tp8Yoh0P2VlxLymlukuhlfBvV9nW8fSYLIW9M4pRLKm55'
+  consumer_key: '',
+  consumer_secret: '',
+  access_token_key: '',
+  access_token_secret: ''
 });
 
-var sentAlUser="76e8dbf1-a95c-41b0-94f2-a1881f75222e";
-var sentAlPass="JLPZTXIHYFuD";
+var sentAlUser="";
+var sentAlPass="";
 
 var toneAnalyzer = new ToneAnalyzerV3({
   username: sentAlUser,
